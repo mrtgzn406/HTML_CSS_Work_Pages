@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Positioning</title>
+    <!-- <link rel="stylesheet" href="static.css">
+    <link rel="stylesheet" href="static2.css"> -->
+    <style>
+        @import "container.css";
+        @import url("ic_kutu1.css");
+        @import "ic_kutu2.css" screen and (max-width: 800px);
+        
+        /* rem ve em kodları kendisini kapsayıcısındaki font-size değerine göre ayarlayan kodlardır. 
+        Mesela body etiketi içinde bir div olduğunu onun da içinde bir p etiketi olduğunu düşünelim
+        eğer body etiketine font-size: 10px; verilmişse , sonra da body içindeki div'in margin, padding, font-size, box-shadow 
+        gibi özelliklere rem veya em cinsinden değer verilmişse , program bunu o body etiketine verdiğimiz 10px değerini
+        baz alarak yapar. 
+        
+        Yani biz body font-size: 10px; değerine sahipken body etiketi içindeki div'in font-size'ına 
+        1rem veya 1em diyorsak bu kapsayıcı olan body etiketindeki 10px'e eşittir, yani 1rem = 10px demektir. 
+        Yani eğer div'e rem veya em değer olarak 1.7 (1.7rem veya 1.7em) verilmişse, bu 10px'in 1.7 katı değer ver demektir yani 17px'e eşittir,
+        veya eğer div'e 3em değer verilmişse, bu 10px'in  3 katı değerini yani 30px'i div'e ver demektir.
+   
+        Fakat bu rem ve em değerleri bir tek font-size ayarını yapmak için kullanılmaz, belli bir sayısal değer alabilecek 
+        her şey için kullanılır, mesela rem veya em değerlerini margin, padding, border gibi özelliklere değer vermek
+        için de kullanabiliriz
+        
+        NOT: em veya rem ,  bir dıştaki kapsayıcı etiketin font-size değeri verilmişse onu baz alır, orada bulamazsa bir dıştaki
+        kapsayıcıda arar, orada da bulamazsa daha dıştaki kapsayıcıda arar, eğer hiçbir kapsayıcıda font-size değeri
+        verilmemişse tarayıcı varsayılanına göre hareket eder, bu da genellikle 16px'dir.*/
+        
+        /* 
+           bu özellikler container.css isimli dosyadan yukarıdan import edildi.  
+        
+         *{
+            font-size: 10px;
+        }
+        .container{
+            width: 900px;
+            height: 500px;
+            border: 4px groove darkblue;
+            margin: auto;
+           
+        } */ 
+
+        /* bu özellikler ise ic_kutu1.css isimli dosyadan yukarıda import edildi
+
+        .ic_kutu1{
+            font-size: 2rem;
+            width: 300px;
+            height: 150px;
+            background-color: crimson;
+            margin-top: 2rem;
+            position: static;
+
+           
+        } */
+
+
+        /* bu özellikler static2.css isimli dosyadan yukarıda  import edildi ve ekran genişliği 800px ve  aşağısına
+        gelindiğinde kodları çalıştır şartı koyuldu
+
+         .ic_kutu2{
+            font-size: 1.6em;
+            width: 200px;
+            height: 100px;
+            background-color: gold;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="ic_kutu1">iç kutu 1
+        <div class="ic_kutu2">iç kutu 2</div>
+        </div>
+    </div>
+</body>
+</html>

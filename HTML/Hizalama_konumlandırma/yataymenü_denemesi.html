@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menü Deneme</title>
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            background-image: url(pexels-john-callery-6118615.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: blue;
+        }
+ 
+        li{
+            width: 200px;
+
+
+
+        }
+        li a{
+            /* height: 50px;
+            line-height: 50px; */
+            padding: 15px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            transition: all 2s ease-in;
+            /* border-left: 0px solid aqua;
+            border-right: 0px solid aqua;  */ /* bu satır ve üstündeki satır aktifleşirse bu şu demektir:border:
+            transition özelliğini hover olunca uygula ama hover olduğu zaman 4 saniyede uygulanan özelliklerin 
+            hepsini hoverdan çıktığında da 4 saniye içinde geri al.
+            
+            Eğer üstteki 2 css border komutu aktifleşmezse o zaman da hoverdan çıkıldığı anda , hover olduğunda
+             verilen özelliklerin tamamı kaldırılır*/
+            /* transition: background-color 1s, font-size 0s, border 5s ease-in 0.5s; */
+        }
+        li a:hover{
+            border-left: 5px solid aqua;
+            border-right: 5px solid aqua;
+            background-color: rgb(94, 94, 252) ;
+            color: rgb(18, 231, 221);
+        }
+        li ul{
+            display: none;
+        }
+        
+        ul li:hover ul{
+            display: block;
+            position: absolute;
+        }
+        
+        ul ul a:hover{
+            border-left: 5px solid red;
+            border-right: 5px solid red;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+     
+        <nav class="menu">
+            <ul>
+                <li><a href="https://www.w3schools.com/sass/sass_intro.php">Anasayfa</a></li>
+                <li><a href="https://www.w3schools.com/sass/sass_intro.php">Özgeçmiş</a></li>
+                <li><a href="https://www.w3schools.com/sass/sass_intro.php">Projelerim</a>
+                    <ul>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">kişisel sitem</a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">döviz &amp; borsa sitesi</a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">google play <!-- kripto koşu uygulaması --></a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">app store <!-- talking tom uygulaması --></a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">steam uygulaması</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.w3schools.com/sass/sass_intro.php">İletişim</a>
+                    <ul>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">kişisel sitem</a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">döviz &amp; borsa sitesi</a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">google play <!-- kripto koşu uygulaması --></a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">app store <!-- talking tom uygulaması --></a></li>
+                        <li><a href="https://tureng.com/tr/turkce-ingilizce/alg%C4%B1lamak">steam uygulaması</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+     
+</html>

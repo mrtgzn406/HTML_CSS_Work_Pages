@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .dis_kutu{
+                color: white;
+                margin: auto;
+                margin-top: 100px;
+                width: 4000px;
+                height: 1200px;
+                border: 5px solid black;
+                
+            }
+
+            .dis_kutu div{
+                margin: auto;
+            }
+        
+            /*CSS'de "position:absolute" özelliğine sahip bir etiket, en yakın konumlandırılmış ata etikete göre 
+            konumlandırılır (fixed gibi, görüntü alanına göre konumlandırılmaz).
+            Ancak; absolute konumlandırılmış bir öğenin konumlandırılmış üst etiketi yoksa, body etiketine göre 
+            kullanılır ve sayfa kaydırmayla birlikte hareket eder.
+
+            Not: "Konumlandırılmış" bir etiket, position özelliğine static dışında herhangi bir başka geçerli değer 
+            giirlmiş olan olan öğedir. */
+            #ic_kutu1{
+                height: 200px;
+                width: 800px;
+                background-color: red;
+                border: 5px solid greenyellow;
+            }
+            #ic_kutu2{
+                position: sticky;
+                top: 0;
+                right: 150px;
+                /* margin-top: 100px; */
+                /* ic_kutu2 isimli etiketin buraya kadar verilmiş css leri onu sticky yapmak içindi, görüldüğü üzere
+                sticky özelliği verilmiş bir öğe de aynı position :relative; ve position: absolute; gibi top, left, right, bottom ve margin
+                özellikleri alabiliyor ve  kendisini kapsayıcısına ve etrafındaki başka nesnelere göre konumlandırır 
+                NOT: position: sticky; özelliğine sahip öğeler kapsayıcısının sınırlarına göre konumlanırken, o kapsayıcının içinde 
+                bulunan diğer etiketlerin konumlarını da algılar, çevresindenki etiketlere göre kendisine bir yer bulur.
+                
+                Not: Eğer position: sticky; olan bir etikete top: 0; verirsek bu ifade o etiket en üste gelip üst kenarlığa değer değmez bağlamdan çık,
+                etiketi sayfanın üst kenarlığı ile arasında 0px kalacak şekilde sabitle, scrollbar aşağı
+                doğru kaydırıldığında bu etiket viewport'tan (ekran alanından) çıkmasın demiş oluyoruz
+
+                Not: Eğer position: sticky; olan bir etikete left: 150px; verirsek bu ifade o etiket en sağa gelip sağ kenarlığa değer değmez bağlamdan çık,
+                etiketi sayfanın sağ kenarlığı ile arasında 150px kalınca orada etiketi sabitle, o etiket daha
+                fazla sağa gitmesin, scrollar istenildiği kadar sola kaydırılsın bu etiket ile sayfanın en sağı arasında
+                150px kalınca orada dur daha fazla sağa gitme demiş oluyoruz.
+                
+                */
+                height: 100px;
+                width: 800px;
+                background-color: green;
+                border: 5px solid blue;
+
+                
+            }
+            #ic_kutu3{
+                /* margin-top: 200px; */
+                height: 150px;
+                width: 800px;
+                background-color: rgb(0, 255, 179);
+                border: 5px solid rgb(105, 0, 32);
+            }
+       
+    </style>
+</head>
+<body>
+    <div class="dis_kutu">
+            <div id="ic_kutu1">iç kutu 1</div>
+            <div id="ic_kutu2">iç kutu 2</div>
+            <div id="ic_kutu3">iç kutu 3</div>
+            
+    </div>
+</body>
+</html>

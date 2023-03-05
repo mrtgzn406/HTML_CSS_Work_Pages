@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .dis_kutu{
+                margin-top: 100px;
+                color: white;
+                margin: auto;
+                width: 1000px;
+                height: 400px;
+                border: 5px solid black;
+                
+            }
+        
+            /* Position:relative; özelliği almış olan etiketler sayfanın normal akışına göre konumlanır, bağlamdan çıkmaz.
+            Scrollbar kayrırıldığında nesne de onunla birlikte kayar, ekran kadrajından çıkabilir.
+            Konumlandırmada etrafındaki nesnelere göre hareket eder. */
+            #ic_kutu1{
+                height: 50%;
+                width: 400px;
+                background-color: red;
+                border: 5px solid greenyellow;
+            }
+            #ic_kutu2{
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50%, -50%);  /* top, left ve transform: translate(x,y) özellikleri bu şekilde 
+                                                    kullanıldığında bir nesneyi kapsayıcısına göre tam ortaya hizalamaya yarar
+                                                    fakat bu örnekte nesne kapsayıcının ortasına hizalanmaz çünkü yukarıda ic_kutu2'nin
+                                                    üstünde ic_kutu1 vardır*/
+                height: 100px;
+                width: 150px;
+                background-color: green;
+                border: 5px solid blue;
+                
+            /*  Not: position: relative; verildiği için bu nesneye artık top, left, right, bottom özellikleri verilebilir,
+                Top, Left, Right, Bottom ve margin özellikleri gibi özellikler, position: relative; özelliğine sahip bir etikete verildiğinde
+                kendisini yalnızca kapsayıcıya göre değil, kapsayıcı içinde kendisiyle birlikte bulunan diğer etiketlere göre 
+                de konumlandırır. Yani etiket etrafındaki nesnelere duyarlı hâle gelir
+               */
+          
+            }
+    </style>
+</head>
+<body>
+    <div class="dis_kutu">
+            <div id="ic_kutu1">iç kutu 1</div>
+            <div id="ic_kutu2">iç kutu 2</div>
+            
+    </div>
+</body>
+</html>

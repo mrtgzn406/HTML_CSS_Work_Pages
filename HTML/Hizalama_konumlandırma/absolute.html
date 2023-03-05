@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .dis_kutu{
+                position: relative;
+                /* bu position kısmını yorum satırına alıp programı çalıştırmayı deneyin, farkı görün. */
+                color: white;
+                margin: auto;
+                width: 1000px;
+                height: 350px;
+                border: 5px solid black;
+                
+            }
+        
+            /*CSS'de "position:absolute" özelliğine sahip bir etiket, en yakın konumlandırılmış ata etikete göre 
+            konumlandırılır (fixed gibi, görüntü alanına göre konumlandırılmaz).
+            Ancak; absolute konumlandırılmış bir öğenin konumlandırılmış üst etiketi yoksa, body etiketine göre 
+            kullanılır ve sayfa kaydırmayla birlikte hareket eder.
+
+            Not: "Konumlandırılmış" bir etiket, position özelliğine static dışında herhangi bir başka geçerli değer 
+            giirlmiş olan olan öğedir. */
+            #ic_kutu1{
+                height: 200px;
+                margin-left: 250px;
+                width: 400px;
+                background-color: red;
+                border: 5px solid greenyellow;
+            }
+            #ic_kutu2{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 100px;  
+                /* ic_kutu2 isimli etiketin buraya kadar verilmiş css leri onu konumlandırmak içindi, görüldüğü üzere
+                absolute özelliği verilmiş bir öğe de aynı position :relative; gibi top, left, right, bottom ve margin
+                özellikleri alabiliyor ve  kendisini position: static; özelliğine sahip olmayan kapsayıcısına göre konumlandırıyor,
+                eğer kapsayıcıların hepsi static ise (çünkü varsayılan position özelliği static gelir) o zaman kendisini body etiketinin
+                sınırlarına göre konumlandırır. 
+                NOT: position: absolute; özelliğine sahip öğeler kapsayıcısının sınırlarına göre konumlanırken, o kapsayıcının içinde 
+                bulunan diğer etiketlerin konumlarını umursamaz.*/
+                height: 100px;
+                width: 200px;
+                background-color: green;
+                border: 5px solid blue;
+            
+          
+            }
+    </style>
+</head>
+<body>
+    <div class="dis_kutu">
+            <div id="ic_kutu1">iç kutu 1</div>
+            <div id="ic_kutu2">iç kutu 2</div>
+            
+    </div>
+</body>
+</html>

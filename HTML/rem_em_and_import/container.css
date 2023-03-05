@@ -1,0 +1,13 @@
+* {
+    font-size: 10px;
+}
+
+
+
+.container {
+    width: 900px;
+    height: 500px;
+    border: 4px groove darkblue;
+    margin: auto;
+
+}
