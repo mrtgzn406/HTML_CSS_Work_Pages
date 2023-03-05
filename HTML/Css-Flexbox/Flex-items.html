@@ -1,0 +1,123 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                background-color: #afafaf6c;
+                border: 3px blue solid;
+                color: rgb(255, 255, 255);
+                font-weight: bolder;
+                width: 90%;
+
+                margin: auto;
+
+
+                display: flex;
+
+                justify-content: center;
+
+            }
+
+
+
+
+            .item {
+                background-color: crimson;
+                height: 50px;
+                width: 50px;
+                padding: 25px 0;
+                margin: 15px;
+                text-align: center;
+                flex: 1;
+
+
+
+                /* eğer "flex-grow: ;" veya "flex: ;" özelliğini kapsayıcının içindeki tüm etiketlere bir class yardımıyla verirsekve 
+                herhangi artı bir sayı atarsak, mesela bir satırda olan tüm etiketler satırı eşit derecede paylaşır.
+                Böylelikle bizde width. 25%; width. 33.33 %; gibi değerler vermekten kurtuluruz*/
+
+            }
+
+            .i1 {
+                /* flex: 6; */
+                /* Bu özellik mevcut dive verildiği oran kadar, genişlik kaplar  */
+
+                order: 7;
+                /* Bu özellik ise html sırasına göre görüntülenen etiketlerin sırasını değiştirir,
+                hangi sayı daha büyükse, o etiket diğer etiketlerin sıra olarak ardına geçer. mesela bir etikete order: 1;
+                başka bir etikete ise order: 2; özelliği verirsek; order: 2; yazdığımız etiket sona geçer */
+            }
+
+            .i2 {
+                /* align-self: ; */
+                /* bu etiket ise atanacağı divin seçicisine yazılır ve nesnenin container
+                içinde konumlandırılmasını sağlar */
+                /* height: 50px; */
+                align-items: flex-end;
+                flex: 3 0 0px;
+                /* these 3 numbers represent the 3 various flex properties and these ones sare flex-grow, flex-shrink
+                and flex-basis. */
+                order: 3;
+            }
+
+            .i3 {
+                /* height: 250px; */
+                /* flex-grow: 1; */
+            }
+
+            .i4 {
+
+                /* flex-basis: 400px;
+                flex-shrink: 0; */
+
+                flex: 1;
+
+                /* align-self: stretch; */
+
+                /* height: 100px; */
+                /* flex-grow: 1; */
+                order: 2;
+
+            }
+
+            .i5 {
+                /* align-self: flex-end; */
+                /* flex-grow: 1; */
+                order: 1;
+
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+
+        <div class="container">
+            <div class="item i1">İTEM 1</div>
+            <div class="item i2">İTEM 2</div>
+            <div class="item i3">İTEM 3</div>
+            <span class="item i4">İTEM 4</span>
+            <i class="item i5">İTEM 5</i>
+            <i class="item i5">İTEM 5</i>
+            <i class="item i5">İTEM 5</i>
+            <i class="item i5">İTEM 5</i>
+            <i class="item i5">İTEM 5</i>
+
+
+
+
+    </body>
+
+    </html>

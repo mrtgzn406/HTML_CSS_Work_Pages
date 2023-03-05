@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+
+        body {
+            font-size: 1.6rem;
+        }
+
+        #navigation {
+
+            display: flex;
+            justify-content: flex-end;
+            background-color: mediumvioletred;
+
+
+
+
+
+        }
+
+        #navigation li {
+            list-style-type: none;
+
+            text-align: center;
+
+
+
+
+
+        }
+
+        #navigation li a {
+
+            width: 13rem;
+
+            text-decoration: none;
+            color: springgreen;
+            padding: 1.8rem 1rem;
+            display: block;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-right: turquoise 0.3rem solid;
+
+
+        }
+
+        #navigation li:nth-child(6) a {
+            border-right: none;
+        }
+
+
+
+        #navigation li a:hover {
+            background-color: rgb(4, 65, 179);
+            color: #fff;
+        }
+
+        #navigation li ul {
+            display: none;
+
+
+        }
+
+
+        #navigation li:hover ul {
+            display: block;
+
+
+        }
+
+
+        @media all and (max-width:900px) {
+            html {
+                font-size: 8px;
+
+            }
+        }
+
+        @media all and (max-width:720px) {
+            html {
+                font-size: 6px;
+
+            }
+
+        }
+
+        @media all and (max-width:545px) {
+            html {
+                font-size: 5px;
+
+            }
+        }
+
+        @media all and (max-width:455px) {
+            html {
+                font-size: 4px;
+
+            }
+        }
+
+        @media all and (max-width:360px) {
+            #navigation {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="navigation">
+        <li><a href="">home page</a></li>
+        <li><a href="">products </a></li>
+        <li><a href="">services</a>
+
+            <ul>
+                <li><a href="">catering</a></li>
+                <li><a href="">transporting</a></li>
+                <li><a href="">sporting</a></li>
+            </ul>
+
+        </li>
+        <li><a href="">vision </a></li>
+        <li><a href="">mission</a></li>
+        <li><a href="">contact us</a></li>
+    </ul>
+
+
+</body>
+
+</html>

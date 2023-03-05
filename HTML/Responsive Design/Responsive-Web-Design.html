@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<style>
+    
+    *{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+        }
+  
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }   
+  
+    
+    html{ font-size:10px;}
+    
+   body {
+        font-family: 'Sansita Swashed', sans-serif;
+	color: #fff;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #333;
+    }
+    
+/*    Header Section*/
+    
+    a{ text-decoration: none;}
+    
+    p{ padding:  1.6rem auto;}
+    
+    header{
+        height: 45rem;
+       
+    }
+    
+    header .bg-image{
+        background-image: url("../../images/responsive-web/bg.jpeg");
+        background-size: cover;
+        background-position: 100% 0;
+        opacity: 0.5;
+        width: 100%;
+        height: 45rem;
+        position: absolute;
+        z-index: -1;
+       
+        
+    }
+    
+    header h1{
+        padding: 11rem;
+        padding-bottom: 0;
+        
+        
+    }
+    
+    .btn{
+        display: inline-block;
+        background-color: #333;
+        color:#fff;
+        border:1px solid #666;
+        padding: 1.6rem 3.2rem;
+        margin: 0.5rem 0;
+        transition: all 0.5s linear;
+        
+            
+    }
+    
+    
+   
+    
+    .btn:hover{
+        background-color: #eaeaea;
+        color: #333;
+        
+    }
+  /*    Header Section End*/
+
+    
+    /*    Main Section 1*/
+
+  
+     #section-a{
+        background-color: #eaeaea;
+        color: #333;
+       padding:  3.2rem;
+       
+    }
+  
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+  
+  #section-b{
+    padding: 2rem;
+  }
+  
+  #section-b ul{ list-style: none;}
+  
+  #section-b li{
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+    
+  }
+  
+  .col-content{ padding: 2rem;}
+  
+      /*    Main Section 1 End*/
+  
+/*  Main Section 2*/
+  
+  #section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+    
+  }
+
+  #section-d .box{
+    padding: 5rem;
+    
+  }
+  
+  #section-d .box:first-child{
+    background-color: #1080DC;
+  }
+  
+  footer{
+    padding: 5rem;
+    background-color: black;
+    color: chartreuse;
+  }
+  
+  footer a{
+    color:aqua;
+  }
+  
+/*  Main Section 2 End*/
+  
+/*   Breakpoints */
+  
+  @media screen and (min-width: 800px){
+    #section-b li{
+/*      float: left;*/
+      display:inline-block;
+      width: 28%;
+      margin: 1%;
+    }
+    .box{
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1200px){
+    html{font-size: 12px;}
+  }
+  
+  
+
+  
+  
+  
+  
+</style>
+<header>
+    <div class="bg-image"></div>
+    <div class="content">
+        <h1>Welcome to muratgozen.com</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, explicabo. </p>
+        <a href="#" class="btn">Read More</a> </div>
+</header>
+  
+<main>
+  
+    <section id="section-a">
+        <div class="content">
+            <h2>Web & Application Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex esse aut maiores, praesentium quos tempora.</p>
+        </div>
+    </section>
+  
+  
+    <section id="section-b">
+        <ul>
+          
+          
+           <li>
+            <div class="col"> <img src="../../images/responsive-web/1.jpeg" alt="">
+                <div class="col-content">
+                        <h3 class="col-title">Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem aliquam porro quis eos officia!</p>
+                </div>
+            </div>
+            </li>
+          
+          
+          <li>
+                <div class="col"> <img src="../../images/responsive-web/2.jpeg" alt="">
+                    <div class="col-content">
+                        <h3 class="col-title">Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem aliquam porro quis eos officia!</p>
+                    </div>
+                </div>
+            </li>
+          
+          
+          <li>
+                <div class="col"> <img src="../../images/responsive-web/3.jpeg" alt="">
+                    <div class="col-content">
+                        <h3 class="col-title">Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem aliquam porro quis eos officia!</p>
+                    </div>
+                </div>
+            </li>
+          
+          
+        </ul>
+    </section>
+  
+    <section id="section-c">
+      <div class="content">
+        <h2>Develop your dreams</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ipsum voluptatem neque! Provident, ad non!</p>
+      </div>
+    </section>
+  
+   <section id="section-d" class="clearfix">
+			
+			<div class="box">
+				
+				<h2 class="content-title">
+					Contact us
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ex qui expedita incidunt nihil cupiditate!
+				</p>
+				<p>sadikturan/contact</p>
+			</div>
+			
+			<div class="box">
+				
+				<h2 class="content-title">
+					About us
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ex qui expedita incidunt nihil cupiditate!
+				</p>
+				<p>sadikturan.com</p>
+			</div>
+		</section>
+  
+  
+  <footer>
+    <p>Develop Your Dreams</p>
+    <p><a href="">With Murat Gözen</a></p>
+  </footer>
+  
+</main>
+  
+</body>
+</html>

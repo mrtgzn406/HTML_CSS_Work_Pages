@@ -1,0 +1,30 @@
+/* CSS Document */
+
+
+#container{ width: 1000px; margin: auto;}
+
+#widediv{ width: 75%; float: left;}
+#narrowdiv{ width: 25%; float: left; }
+
+
+
+div.division_one{   }
+div.division_two{ }
+div.division_three{  }
+
+
+
+#narrowdiv>div.division_four{ background-color: #FFFF00; height:300px;}
+#narrowdiv>div.division_five{ background-color: #800080; height:300px;}
+
+img{ width: 150px; float: right;  padding: 10px;}
+
+p{ border:1px ridge gray; overflow: hidden; text-align: right;}
+
+
+
+
+
+
+
+

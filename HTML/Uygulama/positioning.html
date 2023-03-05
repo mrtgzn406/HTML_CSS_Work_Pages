@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+    
+    <style>
+        
+        body{ margin:0}
+    
+        #container{ width: 800px; height:  500px; border: 3px dashed #000000; overflow: scroll; margin-top: 100px; }
+        div[class]{ height: 100px; width:200px;  }
+        
+  div.header{ position: static; background-color: green;}
+ 
+  div.sidebar{ position: static;  }
+        
+  div.menu{ position: static; margin:200px 0 0 100px; }  /*position: static özelliğini yazmaya gerek yok, divin varsayılan o zaten */
+        
+        div.footer{ position: static ;margin:100px;  }
+        
+        p{ color: blue; }
+        
+       p>label{ color: inherit !important; }
+        
+        
+div.menu>div.innerdiv{ background-color:crimson; color: gold; height: 50px; width: 50px; position: absolute; margin-top: 50px; }
+        
+        
+        hr{ 
+            border-width: 5px;
+            border-style: groove;
+            border-color: magenta;
+        }
+        
+        
+        
+    </style>
+    
+</head>
+    
+
+<body>
+    
+<div id="container">
+    
+    <span style="background-color: aquamarine; height: 200px; color: darkblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nostrum adipisci placeat quidem est dolores praesentium ea harum quas quos, id laboriosam, minima, pariatur repellendus. Dolorem nobis ipsam cumque alias officiis, itaque omnis nam consequatur dignissimos illo, pariatur totam suscipit accusantium id vel dolores, veritatis beatae dolore eveniet rerum. Eum.</span>
+    
+    <div class="header"> </div>
+    <div class="sidebar" style="background-color: orangered;">SİDEBAR</div>
+    <div class="menu" style="background-color: yellow">MENU      <div class="innerdiv">İnnner div</div>
+</div>
+    <div class="footer" style="background-color: aqua;">FOOTER</div>
+       
+       <hr>
+       
+       <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptatibus ipsam, eligendi earum mollitia soluta.<label for="" style="color: deeppink;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ratione.</label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, quia. Incidunt magni, maiores sunt inventore.</p>
+
+    </div>
+   <div id="sticky" style="height: 200px; width:400px;">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus nulla earum debitis quas porro, atque nobis rem accusantium assumenda inventore commodi at illum excepturi velit maiores facere. Esse cupiditate dolorem a numquam aperiam unde nobis ducimus repellendus neque voluptate rerum incidunt pariatur, ex? Minima consectetur fugit quam iste sequi, dignissimos accusamus sit sed iure, inventore magni numquam, ratione voluptates amet illum. Voluptatem soluta nemo, quibusdam, qui mollitia dicta quam?</p>
+     
+     <div style="position: -webkit- sticky ; background-color: crimson; color:white; padding: 15px; position: relative;">I am sticky  </div>
+     
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse rerum cumque, mollitia hic nobis aliquam, totam quibusdam facere quos, at cum molestiae qui maiores voluptas voluptates deserunt odit aspernatur? Rerum eius similique ullam, quasi reiciendis veritatis consectetur magnam molestias atque. Quas officia incidunt cum adipisci distinctio impedit dicta, a sunt dolorum laboriosam excepturi voluptate iure pariatur ducimus odit laborum molestias aut praesentium modi ab cumque ad. At atque sapiente voluptas! Pariatur, asperiores velit dolore, commodi est enim veritatis ipsum porro soluta esse nemo in! Facere numquam, vitae, animi cumque error minima. Doloribus, architecto esse assumenda. Delectus laborum laudantium cum esse numquam officia incidunt quod eum nam modi cupiditate ipsam unde similique aut, natus consectetur harum animi nostrum accusamus eaque perspiciatis recusandae dolore, obcaecati odit sapiente. Doloremque fugit explicabo molestias deleniti, vel totam tempora autem quia fugiat, doloribus perspiciatis distinctio nesciunt! Voluptatum ducimus libero eius consectetur eligendi soluta enim nobis inventore.</p>
+   </div>
+    
+    
+</body>
+</html>

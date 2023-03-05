@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container{ 
+	width: 1000px; 
+	
+	margin: auto !important;
+	
+}
+
+table{ text-align: left; border-color: aqua;  border-width: thin; margin: auto;}
+
+hr{  color: red; width:100%; border: 3px dotted;}
+
+p.paragraph{ color: red;}
+
+label{ color: yellow;}
+
+
+#essiz label{ color: inherit;}  /* İnherit özelliği kendisini kapsayan etiketin özelliğini almak için uygulanır */
+
+td{ color: gold; letter-spacing:5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css'te Değişkenler</title>
+    <style>
+      /* Css'te de aynı scss teki veya programlama dillerindeki gibi isimlerle değişken tanımlanabilir. 
+    bu değişkenlere değerler verilebilir ve o ilgii yerlere değişkenin ismi çağrılarak o değişken özelliğinin
+    ilgili nesneye verilmesi sağlanır.  */
+      /* CSS'te global ve lokal değişkenler vardır global değişkenler :root{} seçicisinin içinde tanımlanıp her türlü seçiciden
+    çağırılabilir iken, lokal değişkenler sadece yazıldığı seçicinin mesela .murat{} seçicisinin içinden kullanılabilir.    */
+      :root {
+        --primary-color: ;
+        --secondary-color: yellow;
+        --kenarlik: 5px solid orangered;
+        --murat_shadow: 0px 0px 40px;
+        --genislik: 800px;
+        --yukseklik: 200px;
+        /* CSS'te değişken tanımlarken onu :root{} isimli global seçicicin içine yazdıktan sonra -- konulur ve 
+    değişken ismi ile değişken özelliği yazılır, istenirse özellik yazılmadan boş değişken de tanımlanabilir.  */
+      }
+
+      body {
+        background-color: var(--primary-color);
+      }
+
+      div {
+        --yukseklik: 400px;
+        width: var(--genislik);
+        height: var(--yukseklik);
+        border: var(--kenarlik);
+        box-shadow: var(--murat_shadow) aqua;
+      }
+
+      div nav {
+        color: var(--secondary-color);
+        --kenarlik: 5px solid magenta;
+        border: var(--kenarlik);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="genel">
+      <nav>murat gözen products</nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 1000px;
+    margin: auto;
+}
+#menu {
+    margin-top: 100px;
+    position: absolute;
+    list-style-type: none;
+}
+#menu li {
+    display: inline-block;
+    float: left;
+    margin-right: 3px;
+    text-align: center;
+    width: 150px;
+}
+li a {
+    background-color: orangered;
+    color: azure;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 10px;
+}
+li a:hover {
+    background-color: lightseagreen;
+    color: whitesmoke;
+}

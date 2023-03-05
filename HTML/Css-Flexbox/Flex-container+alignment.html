@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: darkturquoise;
+            border: 3px blue solid;
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+            width: 90%;
+            /* justify-content: center; bu özellik kapsayıcı için çalışmaz, çünkü justify-content, align-items, flex-self vb. özelliklerin hepsi 
+            yalnızca display: flex; özelliği verilmiş bir kapsayıcının içindeki etiketlere uygulanabilir. O yüzden eski usul margin: auto; kullanmak gerekir*/
+
+            margin: auto;
+
+
+            display: flex;
+            /* Bu özellik kapsayıcı etikete verilir ve içindeki diğer elemanları ister inline ister block etiket olsun;
+             inline block  haline çevirir. Ayrıca bu özellik kapsayıcı etiketin içindeki diğer etiketlere "float:left" verir   */
+
+
+            /* flex-direction: row;
+             Kapsayıcı etikete verilir ve kapsayıcı etiketin içindeki etiketleri soldan başlayarak, sırasıyla yatay
+             şekilde hizalar*/
+
+            /* flex-direction: row-reverse;
+             Kapsayıcı etikete verilir ve kapsayıcı etiketin içindeki etiketleri sağdan başlayarak  sırayla yatay
+             şekilde hizalar*/
+
+            /* flex-direction: column;
+             Kapsayıcı etikete verilir ve kapsayıcı etiketin içindeki etiketleri sırasıyla yukarıdan aşağı olacak
+             şekilde hizalar*/
+
+            /* flex-direction: column-reverse;
+             Kapsayıcı etikete verilir ve kapsayıcı etiketin içindeki etiketleri ters sırayla yukarıdan aşağı olacak
+             şekilde hizalar*/
+
+
+            /* justify-content: space-between; 
+            Kapsayıcı etikete verilir ve kapsayıcı içindeki etiketlerin arasına  eşit olarak boşluk ekler. 
+            Kapsayıcı kenarı ile içerik arasına boşluk eklemez  */
+
+            /* justify-content: space-around; 
+            Kapsayıcı etikete verilir ve kapsayıcı içindeki etiketlerin arasına eşit olarak boşluk ekler.
+            Kapsayıcı kenarı ile içerik arasına ise etiketlerin arasına verdiği boşluğun yarsını verir*/
+
+            /* justify-content: space-evenly; 
+            Kapsayıcı etikete verilir ve kapsayıcı içindeki etiketlerin arasına eşit olarak boşluk ekler.
+            Kapsayıcı kenarı ile içerik arasına ise etiketlerin arasına verdiği boşluğun yarsını verir*/
+
+
+            /* flex-wrap: wrap; 
+            Kapsayıcı etikete verilir ve kapsayıcı içindeki etiketlerin pencereye sığmadığı zaman 
+            yukarıdan aşağıya doğru kaymasını sağlar, sığmayan içerikler aşağı doğru kayar */
+
+            /* flex-wrap: wrap-reverse;
+            Kapsayıcı etikete verilir ve kapsayıcı içindeki etiketlerin pencereye sığmadığı zaman
+            aşağıdan yukarıya doğru kaymasını sağlar, sığmayan içerikler yukarı doğru kayar */
+
+
+
+            /* align-items: ; özelliği  flex-direction: row; iken sayfanın dikeyinde  hizalama yapar,
+            flex-direction: column; olduğunda ise yatayında hizalama yapar*/
+
+            /* justify-content: ;özelliği  flex-direction: row; iken sayfanın yatayında  hizalama yapar,
+            flex-direction: column; olduğunda ise dikeyinde hizalama yapar  */
+
+
+            align-items: flex-end;
+            flex-direction: column;
+
+
+        }
+
+
+
+
+        .item {
+            background-color: crimson;
+            /* height: 50px; */
+            width: 50px;
+            padding: 25px;
+            margin: 25px;
+
+        }
+
+        .i2 {
+            height: 100px;
+        }
+
+        .i3 {
+            height: 200px;
+        }
+
+        .i4 {
+            font-size: 30px;
+
+        }
+
+
+        /* .item::first-line {
+            margin-left: 25px;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item i1">İTEM 1</div>
+        <div class="item i2">İTEM 2</div>
+        <div class="item i3">İTEM 3</div>
+        <span class="item i4">İTEM 4</span>
+        <i class="item i5">İTEM 5</i>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+
+    <style>
+      #container {
+        width: 1200px;
+        margin: auto;
+      }
+
+      .common {
+        background-color: black;
+        /*            float:  left;*/
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        border: solid 5px #ff1493;
+        box-sizing: border-box;
+        box-shadow: 20px 20px 50px 5px blue;
+        margin: 100px 0;
+
+        transition-property: height, width, background, border;
+        transition-duration: 3s, 1s, 5s, 7s;
+        transition-delay: 2s;
+
+        border-radius: 5px;
+      }
+
+      .common:hover {
+        border: #1900f7 inset 10px;
+        width: 600px;
+        height: 200px;
+        background-color: yellow;
+      }
+
+      #card1 {
+        transition-timing-function: linear;
+      }
+      #card2 {
+        transition-timing-function: ease;
+      }
+      #card3 {
+        transition-timing-function: ease-in;
+      }
+      #card4 {
+        transition-timing-function: ease-out;
+      }
+      #card5 {
+        transition-timing-function: ease-in-out;
+      }
+      #card6 {
+        transition-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+      }
+
+      #card7 {
+        transition: opacity 300ms ease;
+        background-color: black;
+        /*            float:  left;*/
+        border-radius: 10px;
+        height: 150px;
+        width: 400px;
+        border: solid 5px #ff1493;
+        box-sizing: border-box;
+        box-shadow: 20px 20px 50px 5px blue;
+        margin: 100px 0;
+      }
+
+      -webkit- #card7:hover {
+        opacity: 0.3 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="common" id="card1 "></div>
+      <div class="common" id="card2 "></div>
+      <div class="common" id="card3 "></div>
+      <div class="common" id="card4 "></div>
+      <div class="common" id="card5 "></div>
+      <div class="common" id="card6 "></div>
+      <div class="common" id="card7 "></div>
+    </div>
+  </body>
+</html>

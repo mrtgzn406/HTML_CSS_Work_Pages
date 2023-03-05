@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Untitled Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #gallery {
+        width: 1000px;
+        margin: 20px auto;
+      }
+
+      .container {
+        width: 25%;
+        float: left;
+        padding: 10px;
+        /*    border: 1px red solid;*/
+      }
+      .image-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: none;
+        object-position: 20% 70%;
+      }
+
+      .image-item {
+        border: 3px #9400d3 groove;
+      }
+
+      description[name] {
+        display: flex;
+        text-align: left;
+        letter-spacing: 1px;
+      }
+
+      .image-item:hover {
+        border: 3px double #dc143c;
+      }
+      .image-item img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      description[name="image-description"]:hover {
+        background-color: darkred;
+        color: lawngreen;
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="gallery">
+      <div class="container">
+        <div class="image-item">
+          <a href=""><img src="../../images/3.jpg" alt="" /></a>
+
+          <description name="image-description">
+            İngilizce eğitimi alanında Türkiye?nin en zengin kaynağını sunan
+            dersimizingilizce.com, ingilizce öğrenen ve öğreten binlerce kişiye
+            hizmet sunuyor.
+          </description>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="image-item">
+          <a href=""><img src="../../images/10.jpg" alt="" /></a>
+
+          <description name="image-description">
+            İngilizce eğitimi alanında Türkiye?nin en zengin kaynağını sunan
+            dersimizingilizce.com, ingilizce öğrenen ve öğreten binlerce kişiye
+            hizmet sunuyor.
+          </description>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="image-item">
+          <a href=""><img src="../../images/9.jpg" alt="" /></a>
+
+          <description name="image-description">
+            İngilizce eğitimi alanında Türkiye?nin en zengin kaynağını sunan
+            dersimizingilizce.com, ingilizce öğrenen ve öğreten binlerce kişiye
+            hizmet sunuyor.
+          </description>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="image-item">
+          <a href=""><img src="../../images/3.jpg" alt="" /></a>
+
+          <description name="image-description">
+            İngilizce eğitimi alanında Türkiye?nin en zengin kaynağını sunan
+            dersimizingilizce.com, ingilizce öğrenen ve öğreten binlerce kişiye
+            hizmet sunuyor.
+          </description>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

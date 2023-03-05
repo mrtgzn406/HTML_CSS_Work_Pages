@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="https://kit.fontawesome.com/7cced4e37c.js" crossorigin="anonymous"></script>
+
+
+
+<style>
+    hr {
+        border: 5px solid red;
+        margin: 30px 0;
+    }
+</style>
+
+
+
+<body>
+
+
+    <div class="container my-5">
+
+        <a href="" class="btn btn-outline-info" data-toggle="tooltip" title="I am on the top" data-placement="top">
+            buradayız
+
+        </a>
+        <a href="" class="btn btn-lg btn-danger" data-toggle="tooltip" title="I am on right" data-placement="right">
+            <i class="spinner-border"></i>
+            buradayım
+
+
+        </a>
+
+
+        <a href="" class="btn btn-dark btn-lg" title="html tag" data-placement="top" data-toggle="tooltip">
+            <i class="spinner-border spinner-grow"></i>
+            html tags
+            that has
+            been written in title can be made a real tag </a>
+
+
+
+
+        <a href="#" class="btn btn-outline-secondary disabled" data-toggle="tooltip" title="<h1>I am on the bottom</h1>"
+            data-placement="bottom" data-html="true" data-content="gördüğün gibi eklenmiyor>
+            <span class=" spinner-border "></span>
+            ben buradayım
+        </a>
+
+
+
+
+    </div>
+
+
+
+    <script>
+        $(function () {
+            $('[data-toggle=" tooltip"]').tooltip(); }); </script> </body> </html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	
+	<style>
+	
+		p::first-line{     /* PSEUDO ELEMENT SELECTORS: Bu pseudo türü, elementlere özellik atar */
+			color: red;
+			font-size: 15px;
+			font-style: oblique;
+			word-spacing: 10px;
+			letter-spacing:3px;
+		}
+		
+		p::first-letter{ font-size: 40px;
+		color: #008000;}
+		
+		ol li:first-child{ background-color: blue;
+		color: yellow;}
+		
+		ol li:last-child{background-color: #FFFF00;
+		color: black;}
+		
+		div.pseudoclass::first-line{    /* PSEUDO CLASS SELECTORS:  bu pseudo türü ise, aynı özellik değeriyle eşleşen her türlü yapıya özellik verir. */
+			
+			text-align: center;
+		text-transform: uppercase;
+			color: #FFA500;
+			letter-spacing: 10px;
+}
+		p::after{ 
+			
+			content: "Bu gördüğün after yazısıdır";
+			display: inline-block;
+			background-color: yellow;
+			
+		}
+		
+		P::before{ content: "Bu gördüğün before yazısıdır";
+			display: block;
+			color: deeppink;
+			background-color: black;
+		}
+		
+		ul>li:nth-of-type(odd){ /* Listedki tüm li etiketlerinden tek sayı olan elemanlara özellik uygular. */
+			color: #FFA500;
+			background: #000000;
+		border: 2px solid thin;}
+		
+		
+		ul li:nth-of-type(even){ color: #00FFFF; background-color:black;}
+		
+		 /* Listedki tüm li etiketlerinden çift sayı olan , elemanlara özellik uygular. */
+		
+	a{
+		display: block;
+		width: 100px;
+		border: 2px dotted gray;
+		padding: 5px 8px;
+		margin-bottom: 10px;
+		text-decoration: none;
+		
+			
+		}
+		
+		a:link { color: #008000;         /* :link seçicisi sitenin bir bağlantısı, bir linki olduğunda çalışan selector yani seçici */
+			;
+	}
+		
+		a:active { color: red !important;   /* :active seçicisi linkin üzerine tıkladığımız an çalışan seçicidir */
+		background: #00FFFF ; }
+	
+		
+		a:hover { color: green !important;          /* :hover seçicisi fare imleciyle yazının üzerine geldiğimizde çalışan seçicidir */
+		font-size: 17px !important;}
+		
+		a:visited { color:#FFA500;         /* :visited seçicisi ise bir bağlantıya daha önce tıklanmışsa, o tıklanan linklere özellik                                          atayan bir seçicidir  */
+			background-color: #0806F4;}
+		
+	---------------------------------------------
+		span{ display: none;
+		
+		}
+		
+	div:hover span{ display: block;
+		background-color: yellow;
+		
+		padding: 20px 0px;
+		}
+	
+		
+
+	</style>
+</head>
+
+<body>
+	
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nemo dicta tenetur, cum quaerat atque corporis! Quo atque possimus aliquam corporis voluptatibus? Omnis rem ipsam sint expedita rerum aut iure placeat at tempore ullam dolorum eaque, nesciunt quisquam dignissimos culpa.</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore veniam eaque, numquam autem deserunt. Laudantium unde facere accusamus dignissimos perspiciatis ducimus dicta culpa, obcaecati eaque. Nesciunt, officia deleniti, labore sequi impedit atque dolores, tenetur reprehenderit laborum quo explicabo quaerat in!</p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis placeat expedita, autem! Eos, atque ipsam omnis rerum cupiditate ut cum incidunt eaque, at aut in dignissimos ab porro. Dolor enim animi quam tempora soluta, id minus rerum! Quaerat voluptate, alias.Desperatei heliusim kirapotano</p>
+	
+	<p >	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ullam vel laboriosam, excepturi, cum reprehenderit magnam. Aliquam consectetur, commodi deleniti dicta facilis eaque earum officiis assumenda non soluta sunt vero modi ad, quo illo ullam ratione? Dolor eum corrupti beatae?</p>
+	
+	
+	<ul>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+		<li> Maddenin 4 hali</li>
+	</ul><br><br>
+	
+	<ol>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+		<li> Provision: hüküm, şart, koşul</li>
+	</ol><br><br>
+	
+<a href="https://www.indirin.co/kategori/oyun-indir/"> click here </a>
+<a  href="https://www.indirin.co/kategori/oyun-indir/"> click here </a>
+<a  href="https://www.indirin.co/kategori/oyun-indir/"> click here </a>
+<a  href="https://www.indirin.co/kategori/oyun-indir/"> click here </a>
+	 
+	<div class="pseudoclass">
+		
+ipsum dolor sit amet, consectetur adipisicing elit. Inventore beatae, qui ea non nobis laudantium iste expedita autem sapiente id eaque quaerat, doloribus quae, soluta fuga, cupiditate sint. Corrupti illum suscipit quia, adipisci! Inventore repudiandae dicta repellat, vitae. Ipsum fugiat doloremque ducimus autem animi quod veniam, consequuntur perferendis, quisquam aspernatur</div>
+	
+	<hr size="5px" color="#1BCC7C"> 
+	 
+	<div >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sit harum voluptates distinctio rerum illo nobis quos, officiis et iure placeat molestiae ad dicta ut suscipit, cum vel fugiat atque! Alias maiores, adipisci saepe reprehenderit sit veritatis unde aliquam animi autem perspiciatis debitis, possimus inventore.<span >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque odio ipsum, hic natus ab nostrum reprehenderit dignissimos amet error? Aperiam amet nulla doloremque possimus repudiandae at rerum, voluptatibus laboriosam ut, veniam maiores in ab nesciunt accusantium deleniti. Iure officiis cumque tempora at, alias minus sit.</span></div>
+		
+	
+	
+</body>
+</html>

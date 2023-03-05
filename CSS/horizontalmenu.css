@@ -1,0 +1,67 @@
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+#container {
+  width: 900px;
+  border: 2px solid green;
+  background-color: aqua;
+  margin: auto;
+}
+
+#menu {
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#menu li {
+  float: left;
+  width: 160px;
+  /*    margin: auto 5px;*/
+}
+
+li a {
+  text-decoration: none;
+  background-color: orangered;
+  color: white;
+  /*  padding: 12px;*/
+  font-size: 20px;
+  display: block;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-weight: bold;
+
+  height: 50px;
+  line-height: 50px;
+
+  /*    padding: 15px 0; ------------- metin üstüne ve altında padding 
+    verilerek dikey hizalama yapılabilir*/
+}
+
+li a:hover {
+  background-color: blue;
+
+
+  /*    padding: 20px; -------------- sonrasında ise  hover verilerek  padding değeri arttırılsa bile alttan ve üstten eşit olarak padding verildiği için, metin dikey olarak hizalanmaya devam eder */
+}
+
+
+
+li ul a {
+  display: none;
+}
+
+li:hover ul a {
+  width: 200px;
+  display: block;
+  background-color: green;
+}
+
+li:hover ul a:hover {
+  background-color: purple;
+}
